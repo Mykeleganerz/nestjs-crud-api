@@ -42,7 +42,11 @@ export class UsersService {
     //findAll function of GET
     async findAll(role?: 'STUDENT' | 'PROFESSOR' | 'ADMIN') {
         if (role) {
-            return this.users.filter((users) => users.role === role);
+            const rolesArray = this.users.filter((user) => user.role === role);
+            if (rolesArray.length === 0) {
+                throw new NotFoundException('User role not found.');
+            }
+            return rolesArray;
         }
         return this.users;
     }
