@@ -1,9 +1,9 @@
 
-## Project Title: NestJS BASIC CRUD API by Mykel Egana
+## NestJS-CRUD-API
 
 This project implements a standard CRUD pattern reinforced by access control and automated request filtering.
 
-## Core Features
+## Core features
 
 * In-Memory CRUD: Performs Create, Read, Update, and Delete operations using a local mock database (JavaScript Array).
 
