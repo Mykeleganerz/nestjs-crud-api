@@ -80,9 +80,9 @@ export class UsersService {
             throw new NotFoundException(`User with ID ${id} cannot be found.`);
         } else {
 
-            existingUser.name = updUserDto.name,
-                existingUser.description = updUserDto.description,
-                existingUser.role = updUserDto.role
+            existingUser.name = updUserDto.name!,
+                existingUser.description = updUserDto.description!,
+                existingUser.role = updUserDto.role!
 
             return existingUser;
         }
