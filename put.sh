@@ -3,6 +3,6 @@ curl POST http://localhost:3000/users/myId \
     -d '{
         "name": "Dodge",
         "age": 23,
-        "description": "Maganda na ang Buhay!"
+        "description": "You can call me Paolo."
         "role": "ADMIN"
     }'

@@ -12,28 +12,28 @@ export class UsersService {
             id: randomUUID(),
             name: 'Jonnel',
             age: 23,
-            description: `BlahBlahBlah.`,
+            description: `My name is Jonnel.`,
             role: 'ADMIN'
         },
         {
             id: randomUUID(),
             name: 'Owen',
             age: 22,
-            description: `Practicing My Skills`,
+            description: `My name is Owen.`,
             role: 'PROFESSOR'
         },
         {
             id: randomUUID(),
             name: 'Jeje',
             age: 26,
-            description: `Gusto ko maging mayaman in the future.`,
+            description: `My name is Jeje.`,
             role: 'STUDENT'
         },
         {
             id: randomUUID(),
             name: 'Karl',
             age: 23,
-            description: `Duty ako mamaya pre, kuha lang ako uniform.`,
+            description: `My name is Karl.`,
             role: 'STUDENT'
         },
     ];
