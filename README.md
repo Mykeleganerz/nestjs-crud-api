@@ -33,3 +33,7 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+
+## Demo Video
+
+[![Watch the demo](https://img.youtube.com/vi/6CABFfZzX2M/maxresdefault.jpg)](https://youtu.be/6CABFfZzX2M)
