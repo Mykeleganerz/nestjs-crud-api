@@ -113,38 +113,7 @@ http://localhost:3000/users
 
 ## Architecture Diagram
 
-```plantuml
-@startuml
-skinparam backgroundColor #FEFEFE
-skinparam classBackgroundColor #FAFAFA
-skinparam classBorderColor #555
-
-rectangle "Client / Frontend" as Client #E1F5FF
-
-package "NestJS Application" #F3E5F5 {
-    component "UsersController" as Controller
-    component "ValidationPipe" as Pipe
-    component "DTOs\ncreate-user.dto\nupdate-user.dto" as DTO
-    component "UsersService" as Service
-}
-
-package "Data Validation" #E8F5E9 {
-    component "class-validator\n@IsString, @IsNumber\n@IsEnum, @IsNotEmpty" as Validator
-}
-
-database "In-Memory Database\n(JavaScript Array)" as Database #FFF3E0
-
-Client --> Controller : HTTP Requests
-Controller --> Pipe : Validate
-Pipe --> DTO : Check DTO
-DTO --> Validator : Validate Data
-Validator --> Service : Validated Data
-Service --> Database : CRUD Operations
-Service --> Controller : Response
-Controller --> Client : HTTP Response
-
-@enduml
-```
+![Architecture Diagram](docs/images/architecture-diagram.svg)
 
 ## Demo Video
 
