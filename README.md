@@ -3,6 +3,9 @@
 
 This project implements a standard CRUD pattern reinforced by access control and automated request filtering.
 
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat&logo=nestjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+
 ## Core features
 
 * In-Memory CRUD: Performs Create, Read, Update, and Delete operations using a local mock database (JavaScript Array).
