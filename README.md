@@ -6,6 +6,14 @@ This project implements a standard CRUD pattern reinforced by access control and
 ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat&logo=nestjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 
+## Table of Contents
+- [Core Features](#core-features)
+- [Tech Stack](#tech-stack)
+- [Project Setup](#project-setup)
+- [API Endpoints](#api-endpoints)
+- [Architecture Diagram](#architecture-diagram)
+- [Demo Video](#demo-video)
+
 ## Core features
 
 * In-Memory CRUD: Performs Create, Read, Update, and Delete operations using a local mock database (JavaScript Array).
@@ -17,6 +25,10 @@ This project implements a standard CRUD pattern reinforced by access control and
 * Exception Handling: Implements built-in NestJS exceptions (like NotFoundException) to return clear HTTP error messages when a user ID does not exist.
 
 * Unique Identification: Automatically generates randomUUID for every new user created to ensure unique indexing.
+
+## Tech stack
+- NestJS
+- TypeScript
 
 ## Project setup
 
@@ -36,6 +48,7 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+[Back to Top](#table-of-contents)
 
 ## API Endpoints
 
@@ -53,6 +66,8 @@ http://localhost:3000/users
 | **POST** | `/users` | Create a new user | Request body (see below) |
 | **PUT** | `/users/:id` | Update a user | `id` - UUID of the user, Request body |
 | **DELETE** | `/users/:id` | Delete a user | `id` - UUID of the user |
+
+[Back to Top](#table-of-contents)
 
 ### Request/Response Examples
 
@@ -114,6 +129,8 @@ http://localhost:3000/users
 }
 ```
 
+[Back to Top](#table-of-contents)
+
 ## Architecture Diagram
 
 ![Architecture Diagram](docs/images/architecture-diagram.svg)
@@ -121,3 +138,5 @@ http://localhost:3000/users
 ## Demo Video
 
 [![Watch the demo](https://img.youtube.com/vi/6CABFfZzX2M/maxresdefault.jpg)](https://youtu.be/6CABFfZzX2M)
+
+[Back to Top](#table-of-contents)
